@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+/*-------------------------INICIO INDEX----------------------------------------- */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    /* background: #fff; */
+    background-size: cover;
+   
+  }
+  
+  .logo{
+    height: 60px;  
+  }
+ 
+
+  nav{
+      display: flex;
+      align-items:center;
+      justify-content: space-around;
+      min-height:8vh;
+      background-color: #0b234c;
+
+  }
+
+  .ham{
+    display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:0;
+    }
+    
+    .ham span{
+        background-color: #f3f3f3;
+        display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+        border-radius:2px;    
+    }
+  .enlaces-menu{
+      display:flex;
+      padding:0; 
+  }
+  .enlaces-menu li{
+      padding: 0 40px;
+      list-style-type: none;
+      transition: 0.3s;
+  }
+
+  .enlaces-menu li a{
+      text-decoration:none;
+      font-size: 1.8rem;
+      color:#f3f3f3;
+      font-weight:600;
+  }
+  .enlaces-menu li:hover{
+      background-color:#FF8000;
+  
+  }
+
+/* DISPOSITIVOS MOVILES */
+
+  @media (max-width:768px) {
+    body{
+      overflow:hidden;
+    }
+      .ham{
+          display:block;
+          cursor:pointer;
+          position: absolute; 
+          top:15px;
+          right:25px;
+          transition: 0.2s  0.1s; 
+  
+      }
+   
+      
+      nav{
+          flex-direction:column;
+          align-items: flex-start;
+          padding-top: 25px;
+          padding-bottom: 25px;
+      }
+
+      .logo{
+        padding-left:25px;
+        
+      }
+
+      .enlaces-menu{
+        
+          flex-direction:column;
+          justify-content: space-around;
+          align-items:center;
+          height: 92vh;         
+          margin:0;
+          padding:0; 
+          display:none;
+          opacity:0;
+          transition: opacity 5s ease-out;
+          width:100%;
+          
+      
+         
+      }
+      .enlaces-menu li{
+        text-align:center;
+        width:100%;
+        padding:20px;
+            
+    }
+      
+}
+
+/* Animaciones */
+  
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .enlaces-menu.activado{
+      display:flex; 
+      animation: muestraMenu 350ms ease-in-out both;
+  }
+
+  .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .br-2.animado{
+    opacity: 0;
+  }
+  .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+  }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
+
+ table{
+  padding: 2em;
+ }
+
+ .columna{
+  background-color: #0b234c;
+  color: #f3f3f3;
+  text-align: left;
+  font-size: 13px;
+  
+ }
+
+ .fila{
+  background-color: #0b234c;
+  color: #f3f3f3;
+  font-size: 13px;
+  font-weight: bold;
+  
+ }
+
+ #img{
+  padding-left: 18px;
+  background-color: #f3f3f3;
+ }
+
+ #entrar{
+  text-align: left;
+  height: 150px;
+  margin-bottom: 50px;
+ }
+
+
+ #enter{
+  background-color: #0b234c;
+  color: #f3f3f3;
+  width: 79px;
+  border-radius: 25px;
+  margin-left: 40px;
+  height: 23px;
+  border: none;
+ }
+
+ #enter:hover{
+  background-color: transparent;
+  transition: 0.1s;
+  border-style: solid;
+ }
+
+ body{
+  background-color: rgb(20, 102, 184);
+ }
+
+/*-------------------------------------------FIN INDEX---------------------------------------- */
+ /*-------------------------------------- INICIO CONTACTO---------------------------------- */
+ .mail-container{
+  height: 300px;
+  width:100%;
+  text-align:center;
+ }
+
+ .form-group{
+  height:200px;
+  width:400px;
+  margin:0px auto;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: bold;
+ }
+
+ .pal-mail{
+  background-color: #0b234c;
+  color: #f3f3f3;
+  margin-left: 4em;
+  margin-right: 4em;
+  border-radius: 25px;
+ }
+
+ .form-control{
+  background-color: #fff;
+  margin-left: 4em;
+  margin-right: 4em;
+  border-radius: 25px;
+  border: none;
+  width: 18em;
+ }
+
+ .submit-cont:hover{
+  background-color: #FF8000;
+  transition: .1s;
+  border-style: solid;
+ }
+
+ /*------------------------------------------FIN CONTACTO---------------------------------------------- */
+
+ /*-------------------------------------------INICIO LOGIN--------------------------------------------- */
+#login-container{
+  height: 300px;
+  width:100%;
+  text-align:center;
+}
+
+#login{
+  height:200px;
+  width:400px;
+  margin:0px auto;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.pal{
+  background-color: #0b234c;
+  color: #f3f3f3;
+  margin-left: 4em;
+  margin-right: 4em;
+  border-radius: 25px;
+}
+
+.pal:hover{
+  background-color: #FF8000;
+  border-style: solid;
+  transition: 0.1s;
+}
+
+.submit-login{
+  background-color: #0b234c;
+  color: #f3f3f3;
+  width: 15.5em;
+  height: 27px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.submit-login:hover{
+  background-color: #FF8000;
+  transition: .1s;
+  border-style: solid;
+  
+}
+
+.login-camp{
+  border-radius: 25px;
+  border:none;
+  width: 19em;
+  height: 27px;
+}
+
+ /*-------------------------------------------FIN LOGIN------------------------------------------------ */
+
+/* ------------------------------------------INICIO FAQS----------------------------------------------- */
+.faqs{
+  padding: 2em;
+  font-size: 14px;
+  transition: 2s;
+}
+
+summary{
+  padding: 1em;
+  background-color: rgba(255, 115, 0, 0.637);
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+}
+summary:hover{
+  background-color: #0b234c;
+  transition: .4s;
+}
+
+details[open] summary ~ *{
+  animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep{
+  from{
+    opacity: 0;
+    margin-top: -10px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.faqs-content{
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  text-align: center;
+}
+/* ------------------------------------------FIN FAQS----------------------------------------------- */
