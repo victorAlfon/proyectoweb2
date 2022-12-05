@@ -33,7 +33,7 @@ if(isset($_SESSION['mat'])){
                 <li><a href="bajas.php"><i class="fa-sharp fa-solid fa-arrow-down"></i>&nbsp;Bajas</a></li>
                 <li><a href="modificarus.php"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Modificación</a></li>
                 <li><a href="query.php"><i class="fa-solid fa-list"></i>&nbsp;Consulta</a></li>
-                <li><a href="index.php"><i class="fa-solid fa-upload"></i>&nbsp;Importar</a></li>
+                <li><a href="index2.php"><i class="fa-solid fa-upload"></i>&nbsp;Importar</a></li>
                 <li><a href="salir.php"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Salir</a></li>
             </ul>
 
